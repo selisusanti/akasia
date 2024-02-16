@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DebitCardController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\DebitCardTransactionController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,3 +30,9 @@ Route::middleware('auth:api')
         Route::post('debit-card-transactions', [DebitCardTransactionController::class, 'store']);
         Route::get('debit-card-transactions/{debitCardTransaction}', [DebitCardTransactionController::class, 'show']);
     });
+
+    // Route::group([
+    // ], function ($router) {
+    //     Route::post('login', ['uses' => 'AuthController@login']);
+    // });
+
