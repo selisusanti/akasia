@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\DebitCardController;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DebitCardTransactionController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,10 +29,15 @@ Route::middleware('auth:api')
         Route::get('debit-card-transactions', [DebitCardTransactionController::class, 'index']);
         Route::post('debit-card-transactions', [DebitCardTransactionController::class, 'store']);
         Route::get('debit-card-transactions/{debitCardTransaction}', [DebitCardTransactionController::class, 'show']);
+
+        Route::post('resetPassword', [AuthController::class, 'resetPassword']);
+
     });
 
-    // Route::group([
-    // ], function ($router) {
-    //     Route::post('login', ['uses' => 'AuthController@login']);
-    // });
+    Route::group([
+    ], function ($router) {
+        Route::post('registrasi', [AuthController::class, 'register']);
+        Route::post('login', [AuthController::class, 'login']);
+    });
+    
 
