@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "84f2b653-927f-4ed9-aeb7-53b748528647",
+		"name": "akasia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6056495"
+	},
+	"item": [
+		{
+			"name": "registrasi",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "seli2",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "susantiseli32334@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "seli1233434",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "089626885802",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/registrasi",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"registrasi"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "susantiseli32334@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "seli1233434",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "reset password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWZjZGU3YTU4ZmNhOTAzNDgzN2MzNGJjMWE1NzdmMWRhNzY1MWYyZTg5NDJhOWE0NzJkNjBhODcxZTlmNzZmZGFjNmEwZDI1OGZkNTQ1YWYiLCJpYXQiOjE3MDgxMTk2OTQuMTc0NzY2LCJuYmYiOjE3MDgxMTk2OTQuMTc0NzY3LCJleHAiOjE3Mzk3NDIwOTQuMTcwODA3LCJzdWIiOiI5Iiwic2NvcGVzIjpbXX0.XaonOyfaSVgQxVsNbjNj691SqFsJSLcYo6848odBpUUyfkQdD7wpUtnXhlVXqz-tCJJoyO9W64TU4FRcqfqQoxRf25_6PL7el3ay8TCliuwiQaYqb5UBB_y6kzf5vheH40ymjeU989tsRBsxptBVCUpb1vQNycj_kippOVJOKEsyJaJhN1cfWbdCmADM6LeVx-aFpGAZ8rCBjJBV4v7nJjLjzAgzrix-oaPNENX1rQNnE4bwNj1pP-W8DqRYI8DX8Au8Y00iPkx9LudjXNUQOb3ikmbCPs8vqdxQb8gjZIj7DPh7RwdcgaYj4euBc8oAizAHA8wQH0wL6oW8NNDwgMP8tj38osN-1UjyAOAdXXNHU_mtSJrS731bsG3GkW0MTu6-IH3jBv0pTw2fUs4wVA6_EVAKXP75xJIQMDzxSyfiKBUmttYbKhR8yWklKsWuXstDgptBe-YdoDth53LdaDcaNunytYlwuoOC2aHALtODgFyzqYr8KAQSic4PFirEzW1Qr60eaiDW3SA8XMeQmBwj6RRyFXxi4CN6CMInL1w9LQgvYkioAPdvkY-3lwnXhIBncYV8JQhlNys4sQ6ODfF-sU_kZ545Qv0IpYpIqrJQgIT-5apGexbSvCsBXDvvR40IDUkZOLNre_dI5AEClyUN-ZqkJw1MW98mSi3JwzU",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "Seli1238909",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "Seli1238909",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/resetPassword",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"resetPassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit card",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmI1NWRkNDUwM2YxYjdiMWVkNWI0NTM3YTQyZjA0MWFjMzAwMDEyNzM5NDQwM2U5ZmQxNjFlMmMyYTUwOWY3NWQyN2JhZmZlY2IwMGExM2QiLCJpYXQiOjE3MDgxMzAwNTkuMDYwMTE4LCJuYmYiOjE3MDgxMzAwNTkuMDYwMTE5LCJleHAiOjE3Mzk3NTI0NTkuMDU4ODQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.f3-TNxWMbrjo--VoLqKxiHhYSpdi3jNhRo1BGOr_pmV_ool0haEBiLrxxI5kffIRyZVjIQY3EpwcWbGYtL1kUtO6kyhsu4waimeftpo66HPacgXQ_TZ95oIpjhusG37XAlxbArQTw_99sCB-kQulOWPtWAaEFPoXXkzKxFZabPCfe9NkESHBm2X7bXgTHtNrwJfTeIRQ1iZTtBPHPeoB2rb_qQ-H-a8KA8_dJChWsTVx5HjClSzmbRZOYRninKsRrLkm70Vpz4KnwYaSIfc7K3xtLEG3xNSa1QetQ5UYnQTAOCfa6kK3oUJJe4qrNKxabcQci9fdvyMZidw5xkOA9e8g8CNGIJV9w1nrV3vQVrP7jCsQd1zjyxWFQ6CjKhAyqLXXw2N2nQDK-8vHfTcuPRCRbm2xOGavH3yjLERT1VB-WmsBaIvwWrhemIpyvjZzNSwiB80TCqP5L662YsBcU9kH3AFUlxWObvekZtcKifHy84NQHuaV1wxXLm68DffC3jzGU2TbVOkvW5IxDh6JEppQnoDmBDEymMph6z_miK_I_wEjtza9O574iOlqa3mX4NKsXO10SPATgeIiDMVsJJTqV6_lj9Ikhufuvkx1yJTRITDJTl8udXC8-3RIr1ayxrd8ixJw7TLkB9HUQVyxnmtN0ezLj6qxNTWRhXTqTa4",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save debit card",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmI1NWRkNDUwM2YxYjdiMWVkNWI0NTM3YTQyZjA0MWFjMzAwMDEyNzM5NDQwM2U5ZmQxNjFlMmMyYTUwOWY3NWQyN2JhZmZlY2IwMGExM2QiLCJpYXQiOjE3MDgxMzAwNTkuMDYwMTE4LCJuYmYiOjE3MDgxMzAwNTkuMDYwMTE5LCJleHAiOjE3Mzk3NTI0NTkuMDU4ODQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.f3-TNxWMbrjo--VoLqKxiHhYSpdi3jNhRo1BGOr_pmV_ool0haEBiLrxxI5kffIRyZVjIQY3EpwcWbGYtL1kUtO6kyhsu4waimeftpo66HPacgXQ_TZ95oIpjhusG37XAlxbArQTw_99sCB-kQulOWPtWAaEFPoXXkzKxFZabPCfe9NkESHBm2X7bXgTHtNrwJfTeIRQ1iZTtBPHPeoB2rb_qQ-H-a8KA8_dJChWsTVx5HjClSzmbRZOYRninKsRrLkm70Vpz4KnwYaSIfc7K3xtLEG3xNSa1QetQ5UYnQTAOCfa6kK3oUJJe4qrNKxabcQci9fdvyMZidw5xkOA9e8g8CNGIJV9w1nrV3vQVrP7jCsQd1zjyxWFQ6CjKhAyqLXXw2N2nQDK-8vHfTcuPRCRbm2xOGavH3yjLERT1VB-WmsBaIvwWrhemIpyvjZzNSwiB80TCqP5L662YsBcU9kH3AFUlxWObvekZtcKifHy84NQHuaV1wxXLm68DffC3jzGU2TbVOkvW5IxDh6JEppQnoDmBDEymMph6z_miK_I_wEjtza9O574iOlqa3mX4NKsXO10SPATgeIiDMVsJJTqV6_lj9Ikhufuvkx1yJTRITDJTl8udXC8-3RIr1ayxrd8ixJw7TLkB9HUQVyxnmtN0ezLj6qxNTWRhXTqTa4",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "debit",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update debit card",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE1ODUyY2NjOGIxMzg1OTVkZDFhOGFmYjU0YzAxZDAwZDg0ZjExZGQxOGMxMGY4ZmQ1NDM2YTBjNjY5OGQzNjRkODZhYmVhMzYxMGEwMjMiLCJpYXQiOjE3MDgxMjQyMzQuNjEwNTU2LCJuYmYiOjE3MDgxMjQyMzQuNjEwNTU3LCJleHAiOjE3Mzk3NDY2MzQuNjA5NTk5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.jErNnPhRPWJSN_ABCXC7VUfeIOdXabDhnISKJjcopJlowtKUQKaDdPXuQ8BUA-IW9yhEUJS4dnyE3XM_4oTjTtT0CFAO6ktnJ-hq4iYMJS90j7WXQav4XCkM6SNWP16HRojXi1MCNtGVcW2Q1E8wRtGe8msn21hxMQFUkJyVKxBwJZRZSyNKyfLpeulqThkqG6AP-iUPz3988OPMyVyOBRflbategqHoDjqlQxbQcIL0Ace0hlCXNPLaBN_p6-1DXOC-JfKwWp_Oyd_y13q05ebgna64i2AVMfTHfPHhMRuK-SC2CTCsxIXIPyDowIdbaqs28C0Ut3ULWjqI7AXtjWhOj1ES5O9tin5oUgNIj454GwkqGDYJhXD6TJvYEFW5P0i3lyBX11ib4oMuGrPs_n2iu-A0DgHoG-NhQU-_capHy9BJtzQ0g-y9wfGwHSsc7CaDNI6XQ9E8cH68IlEbxNHmpmVLUk51Y_pPDbbF3NXpBzW1eCIP3TuZBil1bhnCNoOe3Gd2QFHlHcoHZUHSbTiH_vgLeOof2UdfMuTN_Tsoxx8Xlzl9Q_c2p_C5xA2Qn2bH57zuw_9LM5jHRNsDj7fOoHkrp6e3lGNMqi-Dad2PSo_8qa9uAyvx651c_HcxfbpzKBF59j0PKv--pYtcRlv5vHvSomwAn_0RfQjKAm0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"is_active\"        : \"1\",\n    \"type\"             : \"debit\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit card detail",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE1ODUyY2NjOGIxMzg1OTVkZDFhOGFmYjU0YzAxZDAwZDg0ZjExZGQxOGMxMGY4ZmQ1NDM2YTBjNjY5OGQzNjRkODZhYmVhMzYxMGEwMjMiLCJpYXQiOjE3MDgxMjQyMzQuNjEwNTU2LCJuYmYiOjE3MDgxMjQyMzQuNjEwNTU3LCJleHAiOjE3Mzk3NDY2MzQuNjA5NTk5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.jErNnPhRPWJSN_ABCXC7VUfeIOdXabDhnISKJjcopJlowtKUQKaDdPXuQ8BUA-IW9yhEUJS4dnyE3XM_4oTjTtT0CFAO6ktnJ-hq4iYMJS90j7WXQav4XCkM6SNWP16HRojXi1MCNtGVcW2Q1E8wRtGe8msn21hxMQFUkJyVKxBwJZRZSyNKyfLpeulqThkqG6AP-iUPz3988OPMyVyOBRflbategqHoDjqlQxbQcIL0Ace0hlCXNPLaBN_p6-1DXOC-JfKwWp_Oyd_y13q05ebgna64i2AVMfTHfPHhMRuK-SC2CTCsxIXIPyDowIdbaqs28C0Ut3ULWjqI7AXtjWhOj1ES5O9tin5oUgNIj454GwkqGDYJhXD6TJvYEFW5P0i3lyBX11ib4oMuGrPs_n2iu-A0DgHoG-NhQU-_capHy9BJtzQ0g-y9wfGwHSsc7CaDNI6XQ9E8cH68IlEbxNHmpmVLUk51Y_pPDbbF3NXpBzW1eCIP3TuZBil1bhnCNoOe3Gd2QFHlHcoHZUHSbTiH_vgLeOof2UdfMuTN_Tsoxx8Xlzl9Q_c2p_C5xA2Qn2bH57zuw_9LM5jHRNsDj7fOoHkrp6e3lGNMqi-Dad2PSo_8qa9uAyvx651c_HcxfbpzKBF59j0PKv--pYtcRlv5vHvSomwAn_0RfQjKAm0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "debit",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMTE1ODUyY2NjOGIxMzg1OTVkZDFhOGFmYjU0YzAxZDAwZDg0ZjExZGQxOGMxMGY4ZmQ1NDM2YTBjNjY5OGQzNjRkODZhYmVhMzYxMGEwMjMiLCJpYXQiOjE3MDgxMjQyMzQuNjEwNTU2LCJuYmYiOjE3MDgxMjQyMzQuNjEwNTU3LCJleHAiOjE3Mzk3NDY2MzQuNjA5NTk5LCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.jErNnPhRPWJSN_ABCXC7VUfeIOdXabDhnISKJjcopJlowtKUQKaDdPXuQ8BUA-IW9yhEUJS4dnyE3XM_4oTjTtT0CFAO6ktnJ-hq4iYMJS90j7WXQav4XCkM6SNWP16HRojXi1MCNtGVcW2Q1E8wRtGe8msn21hxMQFUkJyVKxBwJZRZSyNKyfLpeulqThkqG6AP-iUPz3988OPMyVyOBRflbategqHoDjqlQxbQcIL0Ace0hlCXNPLaBN_p6-1DXOC-JfKwWp_Oyd_y13q05ebgna64i2AVMfTHfPHhMRuK-SC2CTCsxIXIPyDowIdbaqs28C0Ut3ULWjqI7AXtjWhOj1ES5O9tin5oUgNIj454GwkqGDYJhXD6TJvYEFW5P0i3lyBX11ib4oMuGrPs_n2iu-A0DgHoG-NhQU-_capHy9BJtzQ0g-y9wfGwHSsc7CaDNI6XQ9E8cH68IlEbxNHmpmVLUk51Y_pPDbbF3NXpBzW1eCIP3TuZBil1bhnCNoOe3Gd2QFHlHcoHZUHSbTiH_vgLeOof2UdfMuTN_Tsoxx8Xlzl9Q_c2p_C5xA2Qn2bH57zuw_9LM5jHRNsDj7fOoHkrp6e3lGNMqi-Dad2PSo_8qa9uAyvx651c_HcxfbpzKBF59j0PKv--pYtcRlv5vHvSomwAn_0RfQjKAm0",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "type",
+							"value": "debit",
+							"type": "text"
+						},
+						{
+							"key": "number",
+							"value": "23293928392",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/debit-cards/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"debit-cards",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "debit-card-transactions",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZmI1NWRkNDUwM2YxYjdiMWVkNWI0NTM3YTQyZjA0MWFjMzAwMDEyNzM5NDQwM2U5ZmQxNjFlMmMyYTUwOWY3NWQyN2JhZmZlY2IwMGExM2QiLCJpYXQiOjE3MDgxMzAwNTkuMDYwMTE4LCJuYmYiOjE3MDgxMzAwNTkuMDYwMTE5LCJleHAiOjE3Mzk3NTI0NTkuMDU4ODQzLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.f3-TNxWMbrjo--VoLqKxiHhYSpdi3jNhRo1BGOr_pmV_ool0haEBiLrxxI5kffIRyZVjIQY3EpwcWbGYtL1kUtO6kyhsu4waimeftpo66HPacgXQ_TZ95oIpjhusG37XAlxbArQTw_99sCB-kQulOWPtWAaEFPoXXkzKxFZabPCfe9NkESHBm2X7bXgTHtNrwJfTeIRQ1iZTtBPHPeoB2rb_qQ-H-a8KA8_dJChWsTVx5HjClSzmbRZOYRninKsRrLkm70Vpz4KnwYaSIfc7K3xtLEG3xNSa1QetQ5UYnQTAOCfa6kK3oUJJe4qrNKxabcQci9fdvyMZidw5xkOA9e8g8CNGIJV9w1nrV3vQVrP7jCsQd1zjyxWFQ6CjKhAyqLXXw2N2nQDK-8vHfTcuPRCRbm2xOGavH3yjLERT1VB-WmsBaIvwWrhemIpyvjZzNSwiB80TCqP5L662YsBcU9kH3AFUlxWObvekZtcKifHy84NQHuaV1wxXLm68DffC3jzGU2TbVOkvW5IxDh6JEppQnoDmBDEymMph6z_miK_I_wEjtza9O574iOlqa3mX4NKsXO10SPATgeIiDMVsJJTqV6_lj9Ikhufuvkx1yJTRITDJTl8udXC8-3RIr1ayxrd8ixJw7TLkB9HUQVyxnmtN0ezLj6qxNTWRhXTqTa4",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\" : \"3\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/loan",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"loan"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
