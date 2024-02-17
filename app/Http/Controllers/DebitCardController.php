@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller as BaseController;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
+use App\Services\Response;
 
 class DebitCardController extends BaseController
 {
@@ -92,7 +93,7 @@ class DebitCardController extends BaseController
     public function destroy(DebitCardDestroyRequest $request, DebitCard $debitCard)
     {
         $debitCard->delete();
-
-        return response()->json([], HttpResponse::HTTP_NO_CONTENT);
+        return Response::success('success delete');
+        // return response()->json([], HttpResponse::HTTP_NO_CONTENT);
     }
 }
