@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         //
+        Commands\ScheduleRepayment::class,
     ];
 
     /**
@@ -25,6 +26,9 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         // $schedule->command('inspire')->hourly();
+        $schedule->command('schedule:repayment')
+                ->dailyAt('00:01')
+                ->timezone('Asia/Jakarta');
     }
 
     /**

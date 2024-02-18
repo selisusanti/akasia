@@ -7,6 +7,7 @@ use App\Models\ReceivedRepayment;
 use App\Models\User;
 use App\Models\ScheduledRepayment;
 use Carbon\Carbon;
+use Illuminate\Http\Request;
 
 class LoanService
 {
@@ -23,7 +24,6 @@ class LoanService
      */
     public function createLoan(User $user, int $amount, string $currencyCode, int $terms, string $processedAt): Loan
     {
-        // return $user;
         $loan = Loan::create([
             'user_id'               => $user->id,
             'amount'                => $amount,
@@ -43,7 +43,8 @@ class LoanService
                 'loan_id'               => $loan->id,
                 'outstanding_amount'    => $perbulan,
                 'processed_at'          => $newDateTime,
-                'currency_code'         => ScheduledRepayment::STATUS_DUE,
+                'currency_code'         => $currencyCode,
+                'status'                => ScheduledRepayment::STATUS_DUE,
             ]);
         }
         $loan_detail    = Loan::with(["scheduledRepayments"])

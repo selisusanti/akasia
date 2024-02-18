@@ -36,6 +36,7 @@ Route::middleware('auth:api')
         // loan
         Route::get('loan', [LoanController::class, 'index']);
         Route::post('loan', [LoanController::class, 'store']);
+        Route::post('payment', [LoanController::class, 'payment']);
 
     });
 

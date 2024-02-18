@@ -32,7 +32,8 @@ class ScheduledRepayment extends Model
         'loan_id',
         'processed_at',
         'currency_code',
-        'outstanding_amount'
+        'outstanding_amount',
+        'status'
     ];
 
     /**
